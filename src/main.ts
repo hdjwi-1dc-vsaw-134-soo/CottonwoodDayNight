@@ -33,6 +33,10 @@ scheduler.setInterval(cronStartDay, () => {
 const date = new Date();
 const startNight = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 19, 0, 0);
 const startDay = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 7, 0, 0);
+console.log("This is test")
+console.log(startDay)
+console.log(startNight)
+console.log(date)
 if (date < startNight || date > startDay) {
     console.log(startDay)
     console.log(startNight)
